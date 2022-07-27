@@ -33,42 +33,42 @@ describe("Calculator Class", function() {
   }
 
 
-//   // add
+  // add
 
-//   describe("add", function() {
+  describe("add", function() {
 
-//     it("should add two positive numbers", function() {
-//       verifyAnswer(calculator.add(3, 2), 5);
-//     });
+    it("should add two positive numbers", function() {
+      verifyAnswer(calculator.add(3, 2), 5);
+    });
   
-//     it("should add a positive and a negative number", function() {
-//       verifyAnswer(calculator.add(3, -2), 1);
-//     });
+    it("should add a positive and a negative number", function() {
+      verifyAnswer(calculator.add(3, -2), 1);
+    });
   
-//     it("should give the same value when adding zero", function() {
-//       verifyAnswer(calculator.add(3, 0), 3);
-//     });
+    it("should give the same value when adding zero", function() {
+      verifyAnswer(calculator.add(3, 0), 3);
+    });
   
-//   });
+  });
 
 
-//   // subtract
+  // subtract
 
-//   describe("subtract", function() {
+  describe("subtract", function() {
 
-//     it("should subtract two numbers", function() {
-//       verifyAnswer(calculator.subtract(3, 2), 1);
-//     });
+    it("should subtract two numbers", function() {
+      verifyAnswer(calculator.subtract(3, 2), 1);
+    });
   
-//     it("should subtract two numbers for a negative result", function() {
-//       verifyAnswer(calculator.subtract(2, 3), -1);
-//     });
+    it("should subtract two numbers for a negative result", function() {
+      verifyAnswer(calculator.subtract(2, 3), -1);
+    });
   
-//     it("should give the same value when subtracting zero", function() {
-//       verifyAnswer(calculator.subtract(3, 0), 3);
-//     });
+    it("should give the same value when subtracting zero", function() {
+      verifyAnswer(calculator.subtract(3, 0), 3);
+    });
   
-//   });
+  });
   
 
 //   // multiply
