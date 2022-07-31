@@ -27,7 +27,7 @@ describe("English Wikipedia REST API", function() {
 
   describe("GET /page/", function() {
 
-    it("should return a list of page-related API endpoints", function(done) {
+    it("suite 4 test 1", function(done) {
       frisby
         .get(BASE_URL + "/page/")
         .then(function(response) {
@@ -39,6 +39,7 @@ describe("English Wikipedia REST API", function() {
           expect(response.json.items).toContain("wikitext");
         })
         .done(done);
+        console.log("suite 4 test 1");
     });
 
   });
@@ -46,7 +47,7 @@ describe("English Wikipedia REST API", function() {
 
   // /page/html/{title}
 
-  describe("GET /page/html/{title}", function() {
+  describe("suite 4 test 2", function() {
 
     it("should return the latest HTML for the given page title", function(done) {
       frisby
@@ -57,6 +58,7 @@ describe("English Wikipedia REST API", function() {
           // To be more robust, this test could parse the body into HTML
         })
         .done(done);
+        console.log("suite 4 test 2");
     })
 
   });
@@ -64,7 +66,7 @@ describe("English Wikipedia REST API", function() {
 
   // /page/summary/{title}
 
-  describe("GET /page/summary/{title}", function() {
+  describe("suite 4 test 3", function() {
 
     it("should return the summary for the given page title", function(done) {
       frisby
@@ -76,6 +78,7 @@ describe("English Wikipedia REST API", function() {
           expect(response.json.extract).toContain("Pokémon");
         })
         .done(done);
+        console.log("suite 4 test 3");
     })
 
   });

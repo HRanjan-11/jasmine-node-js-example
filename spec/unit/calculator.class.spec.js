@@ -37,16 +37,46 @@ describe("Calculator Class", function() {
 
   describe("add", function() {
 
-    it("should add two positive numbers", function() {
+    // let idx = 1;
+    it("suite 1 test 1", function() {
       verifyAnswer(calculator.add(3, 2), 5);
+      console.log("suite1 test 1");
+      // expect(idx).toBe(1);
     });
   
-    it("should add a positive and a negative number", function() {
+    it("suite 1 test 2", function() {
       verifyAnswer(calculator.add(3, -2), 1);
+      console.log("suite1 test 2");
+      // idx++;
+      // expect(idx).toBe(2);
     });
   
-    it("should give the same value when adding zero", function() {
+    it("suite 1 test 3", function() {
       verifyAnswer(calculator.add(3, 0), 3);
+      console.log("suite1 test 3");
+      // idx++;
+      // expect(idx).toBe(3);
+    });
+
+    it("suite 1 test 4", function() {
+      verifyAnswer(calculator.add(3, 0), 3);
+      console.log("suite1 test 4");
+      // idx++;
+      // expect(idx).toBe(4);
+    });
+
+    it("suite 1 test 5", function() {
+      verifyAnswer(calculator.add(3, 0), 3);
+      console.log("suite1 test 5");
+      // idx++;
+      // expect(idx).toBe(5);
+    });
+
+    it("suite 1 test 6", function() {
+      verifyAnswer(calculator.add(3, 0), 3);
+      console.log("suite1 test 6");
+      // idx++;
+      // expect(idx).toBe(6);
     });
   
   });
@@ -56,16 +86,19 @@ describe("Calculator Class", function() {
 
   describe("subtract", function() {
 
-    it("should subtract two numbers", function() {
+    it("suite 1 should subtract two numbers", function() {
       verifyAnswer(calculator.subtract(3, 2), 1);
+      console.log("suite1_1 test 1");
     });
   
-    it("should subtract two numbers for a negative result", function() {
+    it("suite 1 should subtract two numbers for a negative result", function() {
       verifyAnswer(calculator.subtract(2, 3), -1);
+      console.log("suite1_1 test 2");
     });
   
-    it("should give the same value when subtracting zero", function() {
+    it("suite 1 should give the same value when subtracting zero", function() {
       verifyAnswer(calculator.subtract(3, 0), 3);
+      console.log("suite1_1 test 3");
     });
   
   });
@@ -97,14 +130,23 @@ describe("Calculator Class", function() {
   
 //   });
   
+it("should divide two positive numbers", function() {
+  verifyAnswer(calculator.divide(10, 2), 5);
+  console.log("suite1_2 test 1");
+});
+
+    it("should divide two negative numbers", function() {
+      verifyAnswer(calculator.divide(-10, -2), 5);
+      console.log("suite1_2 test 2");
+    });
 
 //   // divide
 
 //   describe("divide", function() {
 
-//     it("should divide two positive numbers", function() {
-//       verifyAnswer(calculator.divide(10, 2), 5);
-//     });
+    // it("should divide two positive numbers", function() {
+    //   verifyAnswer(calculator.divide(10, 2), 5);
+    // });
   
 //     it("should divide two negative numbers", function() {
 //       verifyAnswer(calculator.divide(-10, -2), 5);
@@ -149,18 +191,18 @@ describe("Calculator Class", function() {
   
   // minimum
 
-  describe("minimum", function() {
+  // describe("minimum", function() {
 
-    [
-      [1, 2, 1],
-      [2, 1, 1],
-      [1, 1, 1],
-    ].forEach(([a, b, expected]) => {
-      it(`should return ${expected} when given ${a} and ${b}`, () => {
-        verifyAnswer(calculator.minimum(a, b), expected);
-      });
-    });
+  //   [
+  //     [1, 2, 1],
+  //     [2, 1, 1],
+  //     [1, 1, 1],
+  //   ].forEach(([a, b, expected]) => {
+  //     it(`suite 1 should return ${expected} when given ${a} and ${b}`, () => {
+  //       verifyAnswer(calculator.minimum(a, b), expected);
+  //     });
+  //   });
 
-  });
+  // });
 
 });

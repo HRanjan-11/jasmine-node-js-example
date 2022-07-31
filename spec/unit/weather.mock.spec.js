@@ -66,16 +66,17 @@ describe("WeatherCaller Class", function() {
 //     expect(weatherCaller.forecasts[forecastKey]).toEqual(dummyForecast);
 //   });
 
-//   it("should get a cached forecast the second time", function() {
-//     // The inner function should be called only once
-//     // The same object should be returned by both method calls
-//     let forecast1 = weatherCaller.getForecast(12, 25, 2017, 21047);
-//     let forecast2 = weatherCaller.getForecast(12, 25, 2017, 21047);
-//     expect(callForecastMock.calledOnce).toBeTruthy();
-//     expect(forecast1).toBe(forecast2);
-//   });
+  it("suite 3 test 1", function() {
+    // The inner function should be called only once
+    // The same object should be returned by both method calls
+    let forecast1 = weatherCaller.getForecast(12, 25, 2017, 21047);
+    let forecast2 = weatherCaller.getForecast(12, 25, 2017, 21047);
+    expect(callForecastMock.calledOnce).toBeTruthy();
+    expect(forecast1).toBe(forecast2);
+    console.log("suite 3 test 1");
+  });
 
-  it("should get and cache multiple forecasts", function() {
+  it("suite 3 test 2", function() {
     // The other tests verify the mechanics of individual calls
     // This test verifies that the caller can handle multiple forecasts
 
@@ -105,6 +106,7 @@ describe("WeatherCaller Class", function() {
     expect(forecast3).toEqual(dummyForecast);
     expect(forecast4).toEqual(newForecast);
     expect(forecast5).toEqual(newForecast);
+    console.log("suite 3 test 2");
   });
 
   afterEach(function() {
